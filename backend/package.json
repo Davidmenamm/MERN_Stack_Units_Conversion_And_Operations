@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "0.0.0r0",
+  "description": "backend for conversions and opeations on quantities and units program.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": "localhost",
+  "author": "David Mena",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
