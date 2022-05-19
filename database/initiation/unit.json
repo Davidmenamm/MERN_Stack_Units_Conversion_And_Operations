@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "6282ad83e8aa2939d1aea95b"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "meter",
+  "unit": "m",
+  "quantity_base_unit": 1000,
+  "date_updated": "Mon, 16 May 2022 19:59:13 GMT",
+  "active": true
+},{
+  "_id": {
+    "$oid": "6282ade4e8aa2939d1aea965"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "centimeter",
+  "unit": "cm",
+  "quantity_base_unit": 10,
+  "date_updated": "Mon, 16 May 2022 20:02:13 GMT",
+  "active": true
+},{
+  "_id": {
+    "$oid": "6282ae19e8aa2939d1aea967"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "milimeter",
+  "unit": "mm",
+  "quantity_base_unit": 1,
+  "date_updated": "Mon, 16 May 2022 20:03:13 GMT",
+  "active": true
+},{
+  "_id": {
+    "$oid": "6282ae49e8aa2939d1aea969"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "kilometer",
+  "unit": "km",
+  "quantity_base_unit": 1000000,
+  "date_updated": "Mon, 16 May 2022 20:04:13 GMT",
+  "active": true
+},{
+  "_id": {
+    "$oid": "6282aec5e8aa2939d1aea96b"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "micrometer",
+  "unit": "μ",
+  "quantity_base_unit": 0.001,
+  "date_updated": "Mon, 16 May 2022 20:06:13 GMT",
+  "active": true
+},{
+  "_id": {
+    "$oid": "6282af03e8aa2939d1aea96d"
+  },
+  "magnitude_id": {
+    "$oid": "6282ac83e8aa2939d1aea952"
+  },
+  "name": "nanometer",
+  "unit": "n",
+  "quantity_base_unit": 0.000001,
+  "date_updated": "Mon, 16 May 2022 20:07:13 GMT",
+  "active": true
+}]

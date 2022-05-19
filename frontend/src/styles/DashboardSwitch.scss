@@ -1,0 +1,25 @@
+.dashboard-switch {
+  &__title--disable {
+    color: var(--dashboard-background-color-dark);
+  }
+
+  & .MuiSwitch-switchBase.Mui-checked {
+    color: var(--highlight);
+    & + .MuiSwitch-track {
+      background-color: var(--highlight);
+    }
+  }
+  &--dual {
+    & .MuiSwitch-switchBase.Mui-checked {
+      color: var(--white);
+      & + .MuiSwitch-track {
+        background-color: var(--black);
+        opacity: 0.35;
+      }
+    }
+    & .MuiSwitch-track {
+      background-color: var(--black);
+      opacity: 0.35;
+    }
+  }
+}

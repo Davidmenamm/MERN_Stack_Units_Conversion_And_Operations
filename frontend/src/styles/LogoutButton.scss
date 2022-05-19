@@ -1,0 +1,19 @@
+.logout-button {
+  color: white;
+  border: none;
+  margin-right: 20px;
+  margin-left: 10px;
+  transition: 0.3s;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--highlight);
+  }
+  &--active {
+    background-color: var(--highlight);
+  }
+  &:active {
+    background-color: var(--dashboard-background-color-dark);
+  }
+}

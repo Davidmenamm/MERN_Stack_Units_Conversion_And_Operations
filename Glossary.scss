@@ -1,0 +1,43 @@
+.glossary {
+  &__header {
+    margin: 50px;
+    display: flex;
+    &__img {
+      width: 50px;
+    }
+    &__title {
+      margin-left: 15px;
+      color: var(--dashboard-background-color);
+    }
+  }
+
+  &__body {
+    margin: 50px;
+
+    & table {
+      width: 100%;
+      & thead {
+        & tr {
+          & th {
+            text-align: left;
+            padding: 10px;
+            background-color: var(--dashboard-background-color);
+            color: var(--white);
+          }
+        }
+      }
+
+      & tbody {
+        & tr {
+          &:hover {
+            background-color: #f2f2f2;
+          }
+          & td {
+            padding: 10px;
+            border-bottom: 1px solid var(--dashboard-background-color);
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,9 +17,14 @@ mongoose
 .then(() => {
     // express
     const app = express()
+    const corsOptions ={
+        origin:'*', 
+        credentials:true,            //access-control-allow-credentials:true
+        optionSuccessStatus:200,
+     }
     app.use(express.json())
     // cors
-    app.use(cors());
+    app.use(cors(corsOptions));
     // routes
     app.use("/api", routes)
     // start server

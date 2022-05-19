@@ -1,0 +1,18 @@
+Own Styles
+
+// Rewrite Styles
+.uppy-Dashboard-poweredBy {
+  display: none !important;
+}
+.uppy-Dashboard-browse {
+  color: var(--dashboard-background-color-light);
+  &:hover {
+    border-bottom: 1px solid var(--dashboard-background-color-light);
+  }
+}
+
+// .uppy-Dashboard-inner {
+//   // height: calc(80vh - var(--var-height)*4)!important;
+// }
+
+

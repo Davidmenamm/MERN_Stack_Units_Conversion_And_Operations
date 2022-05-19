@@ -4,7 +4,7 @@
 // imports
 const magnitude = require("../../models/magnitude")
 const unit = require("../../models/unit")
-const query = require("../../constants/query")
+const query = require("../../utils/query")
 
 // add two quantities in different units together
 module.exports.convert = async (magnitudeName, quantityA, unitA, unitB) => {
@@ -21,6 +21,7 @@ module.exports.convert = async (magnitudeName, quantityA, unitA, unitB) => {
     console.log('convert', unitA, unitB, quantityA, selectedMagnitude, selectedUnits, quantityABaseUnits, quantityFromBase, quantityA, quantityToUnits, selectedUnits.find(u => u.name === unitA).quantity_base_unit, selectedUnits.find(u => u.name === unitB).quantity_base_unit);
     // return result
     const resultObject = {
+        _id: Math.random().toString(36).substring(2, 15),
         quantity: quantityToUnits,
         unit: unitB
     }

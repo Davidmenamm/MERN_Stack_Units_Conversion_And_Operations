@@ -1,0 +1,9 @@
+{
+  "APP_ID": "acfd18ea-3e42-4aec-8d0f-39eb49759660",
+  "REDIRECT_URI": "https://hpuploader-dev.compeer.com",
+  "BLOB_URI": "https://hailprodev.blob.core.windows.net",
+  "BLOB_PATH": "files",
+  "NEWS_PATH": "filesread/log.json",
+  "SCOPES": ["user.read"],
+  "AUTHORITY": "https://login.microsoftonline.com/compeer.com"
+}

@@ -1,0 +1,20 @@
+.upload-page-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(90vh - var(--var-height));
+  &__content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 6vh;
+  }
+  &__text {
+    margin-top: 6vh;
+    margin-right: 4vh;
+    margin-left: 4vh;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}

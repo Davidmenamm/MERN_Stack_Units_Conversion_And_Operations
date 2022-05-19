@@ -1,0 +1,33 @@
+.dashboard-selector__form {
+  padding: 0px 20px;
+  width: 250px;
+  &__select {
+    background-color: white;
+    min-height: 30px;
+    height: 45px;
+    &.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: var(--dashboard-background-color-light) !important;
+      border: '1px solid #484850';
+      border-radius: '5px 5px 0 0';
+    }
+
+    &--multiple {
+      height: auto;
+    }
+  }
+  &__label {
+    color: white !important;
+    font-family: var(--font-family) !important;
+  }
+}
+
+@media (max-height: 730px) {
+  .dashboard-selector__form {
+    &__select {
+      height: 30px;
+      &--multiple {
+        height: auto;
+      }
+    }
+  }
+}

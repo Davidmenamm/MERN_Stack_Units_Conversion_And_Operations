@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb/rules/react",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["prettier", "react", "react-hooks"],
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "warn",
+    "prettier/prettier": "error",
+    "react/display-name": "off",
+    "react/function-component-definition" : "off",
+    "react/jsx-no-useless-fragment":[
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/no-children-prop": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "error",
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "ignorePatterns": ["node_modules", "build", "dist", "public"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": "webpack"
+  }
+}

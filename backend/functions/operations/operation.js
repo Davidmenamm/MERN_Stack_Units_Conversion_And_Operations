@@ -4,7 +4,7 @@
 // imports
 const magnitude = require("../../models/magnitude")
 const unit = require("../../models/unit")
-const query = require("../../constants/query")
+const query = require("../../utils/query")
 const conversion = require("../conversions/conversion")
 
 
@@ -40,6 +40,7 @@ module.exports.operate = async (operator, magnitudeName, quantityA, unitA, quant
     console.log('resultInUnitsB', resultInUnitsB);
     // return result
     const resultObject = {
+        _id: Math.random().toString(36).substring(2, 15),
         quantityA: resultInUnitsA.quantity,
         unitA,
         quantityB: resultInUnitsB.quantity,

@@ -1,0 +1,25 @@
+.uploader-footer-container {
+  height: calc(20vh - var(--var-height));
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-color: var(--contrast-background-color);
+  &__button {
+    height: 5vh;
+    width: 15vh;
+    font-size: medium;
+    margin-right: 6vh;
+    background-color: var(--dashboard-background-color);
+    border-color: var(--dashboard-background-color);
+    color: var(--white);
+    border-style: none;
+    &:hover {
+      background-color: var(--dashboard-background-color-dark);
+    }
+    &:focus {
+      background-color: var(--dashboard-background-color-dark);
+    }
+  }
+}
