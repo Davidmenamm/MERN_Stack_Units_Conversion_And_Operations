@@ -15,8 +15,6 @@ module.exports.operate = async (operator, magnitudeName, quantityA, unitA, quant
     // convert quantities to base units
     const quantityABase = (await conversion.convert(magnitudeName, quantityA, unitA, selectedMagnitude[0].base_unit)).quantity;
     const quantityBBase = (await conversion.convert(magnitudeName, quantityB, unitB, selectedMagnitude[0].base_unit)).quantity;
-    console.log('quantityABase', quantityABase);
-    console.log('quantityBBase', quantityBBase);
     // operate quantities
     let result;
     switch (operator) {
@@ -36,8 +34,6 @@ module.exports.operate = async (operator, magnitudeName, quantityA, unitA, quant
     // convert result to initial units
     const resultInUnitsA = await conversion.convert(magnitudeName, result,  selectedMagnitude[0].base_unit, unitA);
     const resultInUnitsB = await conversion.convert(magnitudeName, result,  selectedMagnitude[0].base_unit, unitB);
-    console.log('resultInUnitsA', resultInUnitsA);
-    console.log('resultInUnitsB', resultInUnitsB);
     // return result
     const resultObject = {
         _id: Math.random().toString(36).substring(2, 15),

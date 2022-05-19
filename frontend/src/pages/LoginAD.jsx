@@ -45,14 +45,6 @@ const Login = () => {
     try {
       // authenticate user
       dispatch(authenticateAD({ msal: msalObject, settings: settingsObject }));
-      // const result = await msalObject.loginPopup({
-      //   scopes: Config.scopes,
-      //   prompt: 'select_account',
-      // });
-      // console.log(result);
-      // setIsAuthenticated(true);
-      // if (result) {
-      // }
     } catch (err) {
       console.log(err);
       setError(err);

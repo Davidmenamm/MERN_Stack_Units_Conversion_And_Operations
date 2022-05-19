@@ -63,11 +63,9 @@ const BaseSelector = ({ label, value, onChange, items, disabled, multiple }) => 
               </CustomMenuItem>
             );
           })}
-        {console.log(items, Array.isArray(items))}
         {items &&
           Array.isArray(items) &&
           items.map((item) => {
-            console.log(item);
             return (
               <CustomMenuItem key={`${label}-${item}`} value={item} data={item}>
                 {item}
@@ -88,7 +86,6 @@ export const MagnitudeSelector = () => {
 
   const getInfo = async () => {
     await getData(urlGetMagnitudes).then((response) => {
-      console.log('response', response);
       const vals = [];
       response.data.forEach((item) => {
         vals.push(item.name);

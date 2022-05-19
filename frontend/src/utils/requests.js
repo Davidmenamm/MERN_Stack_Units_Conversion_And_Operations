@@ -1,6 +1,5 @@
 
 const postData = async (url = '', data = {}) => {
-  console.log('postData', url, data);
   const response = await fetch(url, {
     method: 'POST',
     // credentials: 'include',
@@ -25,7 +24,6 @@ const getData = async (url = '') => {
       return response.json();
     })
     .catch(async () => {
-      console.log('Offline mode detected');
       return db
         .info()
         .then(() => {
@@ -40,7 +38,6 @@ const getData = async (url = '') => {
 };
 
 const putBlob = async (url = '', header = {}, data = {}) => {
-  console.log('putBlob', url, header, data);
   const body = JSON.stringify(data);
   const bodyLength = new TextEncoder().encode(body).length;
   const response = await fetch(url, {

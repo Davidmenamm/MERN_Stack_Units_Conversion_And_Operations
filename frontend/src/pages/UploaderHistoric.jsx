@@ -21,7 +21,6 @@ const UploaderHistoric = () => {
     const settingsLocation = process.env.NODE_ENV === 'development' ? 'settings.local.json' : 'settings.json';
     await fetch(settingsLocation).then((response) => {
       response.json().then((settings) => {
-        console.log('settings', settings);
         setBlobUri(settings.BLOB_URI);
         setBlobPath(settings.BLOB_PATH);
         setNewsPath(settings.NEWS_PATH);
@@ -46,7 +45,6 @@ const UploaderHistoric = () => {
         </Dashboard>
         {!loading && (
           <div className="upload-page-container__content">
-            {console.log('blob uri0', blobUri)}
             <Logger blobUri={blobUri} newsPath={newsPath} toggle={toggle} setToggle={setToggle} />
           </div>
         )}

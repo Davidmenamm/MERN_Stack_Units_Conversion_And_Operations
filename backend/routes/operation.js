@@ -12,7 +12,6 @@ const operation = require("../functions/operations/operation")
 
 // calculate
 operationsRouter.post("/calculate", async (req, res) => {
-    console.log('operation', req.body);
     const result = await operation.operate(
         req.body.operator, 
         req.body.magnitudeName,

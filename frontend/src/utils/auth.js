@@ -7,7 +7,6 @@ import { PublicClientApplication } from '@azure/msal-browser';
 export const getMsalObject = async () => {
   const settingsLocation = process.env.NODE_ENV === 'development' ? 'settings.local.json' : 'settings.json';
   const settings = await fetch(settingsLocation).then((response) => {
-    console.log(response);
     return response.json();
   });
   const { APP_ID, REDIRECT_URI, AUTHORITY } = settings;
@@ -16,11 +15,7 @@ export const getMsalObject = async () => {
       clientId: APP_ID,
       authority: AUTHORITY,
       redirectUri: REDIRECT_URI,
-    },
-    // cache: {
-    //   cacheLocation: 'localStorage',
-    //   storeAuthStateInCookie: true,
-    // },
+    }
   });
   return msal;
 };
@@ -67,13 +62,11 @@ export const getStorageToken = async (loginResponse) => {
   const userName = msalObject.getAccountByUsername(loginResponse.account.username);
   let storageResponse = null;
   if (userName) {
-    console.log('getStorageToken1', msalObject, loginResponse, loginResponse.account, userName);
     const request = {
       account: userName,
       scopes: [`${blobUri}/user_impersonation`],
     };
     storageResponse = await msalObject.acquireTokenSilent(request);
-    console.log('getStorageToken2', storageResponse);
   } else {
     logout(loginResponse);
   }

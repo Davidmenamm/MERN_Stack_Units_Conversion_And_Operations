@@ -10,7 +10,6 @@ const query = require("../../utils/query")
 module.exports.getMagnitudes = async () => {
     // magnitude
     const magnitudes = await magnitude.find();
-    console.log('magnitudes', magnitudes);
     return magnitudes;
 }
 

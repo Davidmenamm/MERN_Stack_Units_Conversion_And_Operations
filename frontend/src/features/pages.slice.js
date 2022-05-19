@@ -14,22 +14,9 @@ const pagesSlice = createSlice({
   },
   reducers: {
     setPageStatus: (state, action) => {
-      const {
-        pageOperation,
-        pageConversion,
-        pageFieldReport,
-        pageProductionCalculator,
-        pageHailPolicyComparison,
-        pageHistoric,
-        pageGlossary,
-      } = action.payload;
+      const { pageOperation, pageConversion } = action.payload;
       state.pageOperation = JSON.parse(pageOperation);
       state.pageConversion = JSON.parse(pageConversion);
-      state.pageFieldReport = JSON.parse(pageFieldReport);
-      state.pageProductionCalculator = JSON.parse(pageProductionCalculator);
-      state.pageHailPolicyComparison = JSON.parse(pageHailPolicyComparison);
-      state.pageHistoric = JSON.parse(pageHistoric);
-      state.pageGlossary = JSON.parse(pageGlossary);
     },
     setInfoBanner: (state, action) => {
       state.infoBanner = action.payload;

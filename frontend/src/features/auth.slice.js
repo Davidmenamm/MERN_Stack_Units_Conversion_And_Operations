@@ -22,12 +22,10 @@ export const authenticateAD = createAsyncThunk('auth/authenticateAD', async ({ m
   // Request Blob Storage access token
   const storageResponse = await getStorageToken(loginResponse, msal);
   // response
-  console.log('typeoff', new Date(loginResponse.expiresOn).toUTCString());
   const response = {
     loginResponse: formatDatesInObject(loginResponse),
     storageResponse: formatDatesInObject(storageResponse)
   };
-  console.log(response);
   // return
   return response;
 });

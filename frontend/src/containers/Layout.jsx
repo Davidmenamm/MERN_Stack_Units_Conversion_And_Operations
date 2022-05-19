@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
       const endDateTimeLogin = new Date(loginResponse.expiresOn);
       const initDateTimeBlob = new Date();
       const endDateTimeBlob = new Date(loginResponse.expiresOn);
-      console.log('DATES ', initDateTimeLogin, endDateTimeLogin, initDateTimeBlob, endDateTimeBlob);
       // if date expired Login
       if (initDateTimeLogin > endDateTimeLogin) {
         Logout();

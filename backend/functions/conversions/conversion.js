@@ -18,7 +18,6 @@ module.exports.convert = async (magnitudeName, quantityA, unitA, unitB) => {
     const quantityFromBase = quantityA * quantityABaseUnits;
     // convert result to initial units
     const quantityToUnits= quantityFromBase / selectedUnits.find(u => u.name === unitB).quantity_base_unit;
-    console.log('convert', unitA, unitB, quantityA, selectedMagnitude, selectedUnits, quantityABaseUnits, quantityFromBase, quantityA, quantityToUnits, selectedUnits.find(u => u.name === unitA).quantity_base_unit, selectedUnits.find(u => u.name === unitB).quantity_base_unit);
     // return result
     const resultObject = {
         _id: Math.random().toString(36).substring(2, 15),
