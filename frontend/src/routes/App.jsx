@@ -4,7 +4,6 @@ import { PAGE_HOME, PAGE_OPERATION, PAGE_CONVERSION } from '@utils/constants';
 import Layout from '@containers/Layout';
 import LoginAD from '@pages/LoginAD';
 import NotFound from '@pages/NotFound';
-import Historic from '@pages/UploaderHistoric';
 import CalculatorPage from '@pages/CalculatorPage';
 import '@styles/index.css';
 import ServiceUnavailable from '@pages/ServiceUnavailable';

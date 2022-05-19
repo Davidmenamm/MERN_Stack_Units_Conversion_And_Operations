@@ -6,7 +6,7 @@ import {
   MagnitudeSelector,
   OperatorSelector,
 } from '@components/Dashboard/DashboardSelector';
-import '@styles/UploaderFooter.scss';
+import '@styles/CalculatorFooter.scss';
 import '@styles/CalculatorPage.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import Logger from '@components/Calculator/Logger';

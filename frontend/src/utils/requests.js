@@ -19,22 +19,9 @@ const getData = async (url = '') => {
     headers: {
       'Content-Type': 'application/json',
     },
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .catch(async () => {
-      return db
-        .info()
-        .then(() => {
-          // Database exists (can't check if is complete or not)
-          return { error: 'offline' };
-        })
-        .catch(() => {
-          // Database does not exist, block acess to the app
-          return { error: 'unauthorized' };
-        });
-    });
+  }).then((response) => {
+    return response.json();
+  });
 };
 
 const putBlob = async (url = '', header = {}, data = {}) => {

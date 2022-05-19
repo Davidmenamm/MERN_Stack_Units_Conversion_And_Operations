@@ -5,11 +5,6 @@ const pagesSlice = createSlice({
   initialState: {
     pageOperation: true,
     pageConversion: true,
-    pageFieldReport: true,
-    pageProductionCalculator: true,
-    pageHailPolicyComparison: true,
-    pageHistoric: true,
-    pageGlossary: true,
     infoBanner: '',
   },
   reducers: {

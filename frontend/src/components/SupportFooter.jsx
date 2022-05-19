@@ -6,7 +6,7 @@ const SupportFooter = () => {
   return (
     <div className="support-footer">
       <span>{CONTACT_INFO}</span>
-      <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
+      <a href="mailto:davidmenam15@gmail.com">{SUPPORT_EMAIL}</a>
     </div>
   );
 };
